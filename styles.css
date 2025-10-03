@@ -1,0 +1,68 @@
+/* Any comments are suggestions for styling! Feel free to style your website any way that you want */
+/* Global Styling */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+select, input, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* Activity 2: Navbar Styling */
+
+#navbar {
+    /*
+    - Change background color to #f9a857
+    - Turn the navbar into a flex container
+    - Distribute items evenly horizontally across the navbar
+    - Align the items evenly vertically across the nav bar
+    - Add a bottom margin of 35px
+    - Add a padding of 25px to thicken navbar
+    */
+    background-color: #f9a857;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: 25px;
+}
+
+/* Given: styling for title */
+.title a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navButtons a {
+    /*
+    - Add padding of 14px
+    - Add 1px solid white border 
+    - Add border radius of 10px for rounded corners
+    - Change font color to white
+    - Set font size to 25px
+    - Get rid of the link underline with text-decoration
+    */
+    padding: 14px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Homepage Styling */
+h2 {
+    text-align: center;
+}
+
+
