@@ -12,6 +12,16 @@ const poll = {
 Activity 3
 *************************/
 
+///// Write your arrow function vote() here! /////
+
+/**
+ * vote() should take in a string argument named "option"
+ * Check that option "option" exists in the poll.votes object
+ *    - If it exists, increase the vote count by 1 and log it in the console
+ *    - If it does not exist, log a message stating "invalid option"
+ */
+
+
 // Arrow function to cast a vote
 const vote = (option) => {
   if (poll.votes[option] !== undefined) {
@@ -33,6 +43,7 @@ const printResults = () => {
 // Call your functions and print results to test
 // Comment out these calls in Activity 4
 // View outputs in outputs tab
+
 // vote("Matcha");     
 // vote("Milk Tea");   
 // vote("Taro");      
@@ -42,15 +53,16 @@ const printResults = () => {
 /* **********************
 Activity 4
 *************************/
-// Simulate random votes with delay
-const simulateVotes = async () => {
-  const options = poll.options;
-  for (let i = 0; i < 5; i++) {
-    const randomOption = options[Math.floor(Math.random() * options.length)];
-    vote(randomOption);
-    await new Promise(resolve => setTimeout(resolve, 500)); // delay 0.5s
-  }
-  printResults();
-};
 
-simulateVotes();
+//////// Write your simulateVotes() function here! ///////
+/**
+ * Declare an async simulateVotes function
+ * Declare a const options
+ * For 5 votes...
+ *    - Declare a const randomOption to store a random vote
+ *    - Call the vote() function from Activity 3 to vote
+ *    - Wait between the votes (hint: await new Promise(...))
+ */
+
+// Call printResults()
+// Call simulateVotes()
