@@ -21,17 +21,6 @@ Activity 3
  *    - If it does not exist, log a message stating "invalid option"
  */
 
-
-// Arrow function to cast a vote
-const vote = (option) => {
-  if (poll.votes[option] !== undefined) {
-    poll.votes[option]++;
-    console.log(`Voted for ${option}!`);
-  } else {
-    console.log(`${option} is not a valid option.`);
-  }
-};
-
 // Given: Function to print current results
 const printResults = () => {
   console.log(`\n${poll.question}`);
